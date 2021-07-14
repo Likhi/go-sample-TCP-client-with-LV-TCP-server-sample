@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-
 	// connect to server
 	conn, _ := net.Dial("tcp", "127.0.0.1:6341")
 	conn2, _ := net.Dial("tcp", "127.0.0.1:6342")
@@ -34,7 +33,6 @@ func main() {
 		message2, _ := bufio.NewReader(conn2).ReadString('\n')
 		fmt.Print("Message from server 2: " + message2)
 	}
-
 }
 
 func randomGreen() string {
